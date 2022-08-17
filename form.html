@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F-Document</title>
+    <style>
+        div.div1{
+            background-color:rgb(189, 189, 189);
+        }
+        .div2 input:not(input[type="radio"]),select,textarea{
+            width: 100%;
+            padding: 5px;
+        }
+        hr{
+            width: 100%;
+        }
+        input[type="radio"]{
+            margin-left: 70px;
+        }
+        .div2{
+            padding: 15px;
+        }
+        img{
+            width:70px;
+            height: 50px;
+            margin-right: 15px;
+        }
+        input[type="submit"],button{
+            cursor: pointer;
+            width: 5%;
+        }
+    </style>
+</head>
+<body>
+   
+<div class="div1">
+    <br>
+    <center><h1>Payment Form</h1></center>
+    <br>
+    
+    <div class="div2">
+        <hr >
+        <h1>User Information</h1>
+    <form action="#">
+        <br>
+        Name* : <br>
+        <input type="text" name="name" id="name" placeholder="ENter name">
+        <br> <br>
+        Gender : <br>
+        <input type="radio" name="gender" id="male">Male <br>
+        <input type="radio" name="gender" id="female">Female <br>
+        <input type="radio" name="gender" id="other" checked>Others <br>
+        <input type="radio" name="gender" id="other2" disabled>Others2 <br>
+        <br>
+        Address : <br>
+        <textarea  name="address" id="address" placeholder="Enter the address..." rows="5"></textarea> <br><br>
+        E-Mail : <br>
+        <input type="email" name="emailId" id="emailId" placeholder="example@google.com"> <br><br>
+        Pincode : <br>
+        <input type="number" name="pin" id="pin" maxlength="6" placeholder="110001"> <br><br>
+    </form>
+</div>
+    <br>
+    <div class="div2">
+    <h1>Payment Information</h1> <br>
+    <form action="#">
+        Accepted cards : <br>
+        <img src="dtcGreenBus.jpg" alt="visa"><img src="dtcRedBus.jpg" alt="credit"><img src="DtcBuses.jpg" alt="debit"><img src="image.jpg" alt="atm"> <br><br>
+        Card Type : <br>
+        <select  name="cardType" id="cardType" required>
+            <option value="">--select Card Type--</option>
+            <option value="visa">Visa</option>
+            <option value="atm">ATM card</option>
+            <option value="credit">Credit Card</option>
+            <option value="debit">Debit Card</option>
+        </select>
+        <br>
+        <br>
+        Card Number* : <br>
+        <input type="number" name="cnum" id="cnum" placeholder="xxxx-xxxx-xxxx" required><br><br>
+        Expiration Date* : <br>
+        <input type="date" name="edate" id="edate"> <br><br>
+        CVV* : <br>
+        <input type="password" name="cvv" id="cvv" required maxlength="3" placeholder="xxx">
+    </form>
+    <br>
+    <center><button>Pay Now</button></center>
+    <center><input style="width: 5%;" type="submit" value="pay now"></center>
+
+</div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample-Float-Position</title>
+    <style>
+        div.div-1{
+            border:1px solid black;
+            width:665px;
+            height: 400px;
+            font-family: cursive;
+        }
+        div.div-1:not(p,.div-2,.div-3){
+            background-color: black;
+        }
+        .div-1 p{
+            font-size:35px;
+            width:550px;
+            height:50px;
+            border-right: 1px solid black;
+            margin: 0px;
+            /* padding: 5px; */
+            padding-top: 15px;
+            padding-bottom: 16px;
+            padding-left: 15px;
+            background-color:white;
+        }
+        div.div-2{
+            width:233px;
+            background-color:white;
+            border:1px solid black;
+            border-left:none;
+            border-right:none;
+            float:left;
+            font-size:150px;
+            height:268px;
+            padding-top: 50px;
+        }
+        div.div-3{
+            width:431px;
+            background-color:white;
+            border:1px solid black;
+            border-right:none;
+            float:right;
+            height: 318px;
+            font-size:large;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div-1">
+        <p><b> Basic Document Flow</p></b>
+        <div class="div-2">
+            <!-- <img src="" alt="image"> -->
+            &#128515
+        </div>
+        <div class="div-3">
+            <ul>
+                <li>Normal flow is how the browser lays out HTML pages by default when you dom nothing to control page layout.</li>
+                <br>
+                <li>To change Normal Flow we have properties like :-
+                    <ul>
+                        <li>display</li>
+                        <li>float</li>
+                        <li>position</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

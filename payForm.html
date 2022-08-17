@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <style>
+        body{
+            background-color:black;
+            background-image:url("image2.webp") ; 
+            /* background-image: linear-gradient(rgb(244, 119, 103),rgb(219, 208, 146)); */
+            background-size:950px;
+            background-repeat: no-repeat;
+            background-position:top;
+            background-attachment: fixed;
+        
+        }
+        h2{
+            margin-left:550px;
+            font-family: cursive;
+        }
+        /* .horiz{
+            background-color: black;
+            height:5px;
+        } */
+        form{
+            font-size: large;
+            font-family: monospace;
+        }
+        fieldset{
+            font-weight: 700; 
+            font-size: 20px;
+            margin-right: 350px;
+            margin-left: 350px;
+            border-width: 1px;
+            border-color: grey;
+        }
+        .fields{
+            /* color:rgb(19, 65, 119); */
+            /* background-color:rgb(177, 233, 243); */
+            background-image: linear-gradient(rgb(204, 168, 231),rgb(173, 195, 202));
+            border-radius: 10px;
+        }
+        .fields2{
+            color:saddlebrown;
+            background-image: linear-gradient(rgb(204, 177, 88),rgb(229, 226, 210)); 
+            border-radius: 10px;
+        }
+        sup{
+            color: red;
+        }
+        input{
+            border-radius: 5px;
+            border-width: 1px;
+            border-style:solid;
+            padding: 4px 25px;
+        }
+    </style>
+</head>
+<body>
+    <!--Form #1-->
+    <!-- <form action="#">
+        <h2>User Details</h2> <br>
+        First Name : <input type="text" name="First Name"> </p>
+        Last Name : <input type="text" name="Last name" ></p>
+        Gender : 
+            Male<input type="radio" name="Gender" id="male"> <br>
+            &emsp;&emsp;&emsp;&ensp;&nbsp;Female <input type="radio" name="Gender" id="female"> <br>
+            &emsp;&emsp;&emsp;&ensp;&nbsp;Other <input type="radio" name="Gender" id="other">
+        
+        E-mail ID : <input type="email" name="E-mail ID" ></p>
+        Address : <textarea name="address" id="address" cols="40" rows="3"></textarea>
+        <Textarea>Address</Textarea>
+        <h2>Payment Details</h2> <br>
+        Card Type : <input type="text" name="cardType" > <br>
+        Card Number : <input type="text" name="cardNumber" >
+        Expiration Date : <input type="date" name="expirationDate">
+        CVV : <input type="text" name="cvv"><br>
+        <input type="submit" value="Pay"><br>
+    </form>
+
+
+    <br> -->
+
+
+    <!--Form #2-->
+
+    <form action="#">
+        <hr class="horiz" size="5px" color="black">
+        <!-- <hr> -->
+        <h2 > <u>User Details</u></h2>
+        <!-- <hr>  -->
+        <hr class="horiz" size="5px" color="black">
+        <pre><h3 style="color:rgb(32, 28, 118); font-family:cursive; font-size: 20px; outline-color:black; outline-style:double;outline-offset: 5px;">                                  .....Required fields are necessarily to be filled and are followed by '*'.....</h3></pre>
+        <fieldset class="fields">
+            <legend>NAME <sup>*</sup></legend>
+            <pre>
+            First Name        :    <input type="text" name="firstName" id="fname" required>
+
+            Last Name         :    <input type="text" name="lastName" id="lname" required>
+        </pre>
+        </fieldset>
+
+        <fieldset class="fields">
+            <legend>GENDER <sup>*</supS></legend>
+            <pre>
+            <input type="radio" name="Gender" id="male" required>  Male <br>
+            <input type="radio" name="Gender" id="female" required checked>  Female<br>
+            <input type="radio" name="Gender" id="other" required>  Other  
+        </pre> 
+        </fieldset>
+
+        <fieldset class="fields">
+            <legend>CONTACT</legend>
+            <pre>
+            Contact number<sup>*</sup>   :    <input type="tel" name="contact_no" id="contact" maxlength="10">
+            
+            E-mail ID         :    <input type="email" name="emailId" id="email" autocomplete="on">
+        </pre>
+        </fieldset>
+
+        <fieldset class="fields">
+            <legend>ADDRESS </legend>
+            <pre style="margin-left:0px;">
+            Street Address <sup>*</sup> :     <input type="text" name="street" id="street" required>
+            
+            Pin-Code <sup>*</sup>       :     <input type="number" name="pincode" id="pincode" max="3" required>
+            
+            City             :     <input type="text" name="city" id="city">
+            
+            State <sup>*</sup>          :        <select name="state" id="state" required>
+                    <option value="">--select a city--</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="Himachal">Himachal</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Meghalaya">Meghalaya</option>
+            </select>
+        </pre>
+        </fieldset>
+        <br>
+        <hr class="horiz" size="5px" color="black">
+        <!-- <hr> -->
+        <h2 ><u>Payment Details </u></h2> 
+        <!-- <hr> -->
+        <hr class="horiz" size="5px" color="black"><br>
+
+        <fieldset class="fields2" >
+            <legend>CARD <sup>*</sup></legend>
+            <p>Card Type : Debit<input type="radio" name="cardType" required> <br>
+                     <p>&emsp;&emsp;&emsp;&emsp;&emsp;Credit<input type="radio" name="cardType" required></p>
+            <p>Card Number : <input type="number" name="cardNumber" required ></p>
+            <p>Expiration Date : <input type="date" name="expirationDate" required></p>
+            <p>CVV : <input type="password" name="cvv" required maxlength="3"></p><br>
+        </fieldset>
+        <button style="padding: 10px 15px; font-weight:700; font-size:15px; background-color: burlywood; border-radius: 5px; border: 0px;margin-left: 650px;margin-top: 45px; margin-bottom: 60px;">Pay now</button>
+    </form>
+
+</body>
+</html>

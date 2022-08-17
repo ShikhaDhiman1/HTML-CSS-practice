@@ -1,0 +1,7 @@
+HTML : 
+
+ELEMENTS                      ATTRIBUTES
+img                           width="", height="", alt=""
+video                         width="", height="", alt="", controls, autoplay, poster="url of pic", loop
+iframe(to embed other         width="", height="", frameborder="0", src=""
+website in our website)

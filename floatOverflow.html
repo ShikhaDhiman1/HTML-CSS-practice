@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: bisque;
+            height: 100px;
+            overflow: visible;
+        }
+        
+        .span-1{
+            width:100px;
+            height:100px;
+            background-color: brown;
+            float:left;
+            border-radius: 50%;
+            /* overflow:visible; */
+        }
+        .span-2{
+            width:50px;
+            height:50px;
+            border-radius: 50%;
+            background-color: darkgreen;
+            float:left;     /* ????? */
+            clear:right;
+            
+        }
+        img{
+            display: inline;
+        }
+        .p-x{
+            width:10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span  class="span-1" ></span>&emsp;&emsp;
+        <span class="span-2" ></span>
+    </div>
+    <p dir="rtl">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, adipisci.</p>
+    <bdo dir="rtl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, nesciunt!</bdo>
+    <p class="p-x">Lorem</p>
+</body>
+</html>

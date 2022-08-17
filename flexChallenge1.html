@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Challenge1</title>
+    <style>
+        .container1, .container2, .container3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top:5px;
+        }
+        .row1, .row2, .row3{
+            background-color: chocolate;
+            color: white;
+            font-size: 30px;
+            border-radius:7px;
+            padding-left: 15px;
+            padding-top: 15px;
+        }
+        div.row1{
+            width:31.8%;
+            height:250px;
+        }
+        div.row2{
+            width:23.52%;
+            height:50px;
+        }
+        div.row3{
+            width:18.6%;
+            height:50px;
+        }
+        .row1-container1, .row1-container2, .row1-container3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top:5px;
+        }
+        .row-1, .row-2, .row-3{
+            background-color: rgb(249, 217, 193);
+            color:chocolate;
+            font-size: 30px;
+            border-radius:7px;
+            padding-left: 15px;
+            padding-top: 15px;
+            /* margin-right: 10px; */
+            
+        }
+        div.row-1{
+            width:28.2%;
+            height:45px;
+            margin-top: 12px;
+        }
+        div.row-2{
+            width:20%;
+            height:45px;
+        }
+        div.row-3{
+            width:15%;
+            height:45px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="row1" id="row-1-box-1">1
+            <div class="row1-container1">
+                <div class="row-1" >1</div>
+                <div class="row-1">2</div>
+                <div class="row-1" style="margin-right: 10px;">3</div>
+            </div>
+            <div class="row1-container2">
+                <div class="row-2">1</div>
+                <div class="row-2">2</div>
+                <div class="row-2">3</div>
+                <div class="row-2" style="margin-right: 10px;">4</div>
+            </div>
+            <div class="row1-container3">
+                <div class="row-3">1</div>
+                <div class="row-3">2</div>
+                <div class="row-3">3</div>
+                <div class="row-3">4</div>
+                <div class="row-3" style="margin-right: 10px;">5</div>
+            </div>
+        </div>
+        <div class="row1">2</div>
+        <div class="row1">3</div>
+    </div>
+    <div class="container2">
+        <div class="row2">1</div>
+        <div class="row2">2</div>
+        <div class="row2">3</div>
+        <div class="row2">4</div>
+    </div>
+    <div class="container3">
+        <div class="row3">1</div>
+        <div class="row3">2</div>
+        <div class="row3">3</div>
+        <div class="row3">4</div>
+        <div class="row3">5</div>
+    </div>
+</body>
+</html>

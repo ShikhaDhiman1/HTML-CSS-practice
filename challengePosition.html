@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-Challenge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       
+        img.img-head{
+            width:100%;
+            height:230px;
+            position: relative;
+        }
+        .img-user{
+            position:absolute;
+            width:190px;
+            height:200px;
+            left:25px;
+            top:25px;
+            border-radius: 7%;
+        }
+        header>h1{
+            font-size: 60px;
+            color:rgb(157, 200, 209); 
+            position:absolute;
+            top:35px;
+            right: 500px;
+            background-color: rgb(11, 33, 38);
+            border-radius: 47px;
+            box-shadow: 0px 0px 10px black, 0px 0px 15px white;
+            padding:15px;
+        }
+        
+        nav{
+            margin:auto;
+            max-width:99.1%;
+            height:55px;
+            background-color: rgb(1, 35, 44);
+            outline: 3px solid rgb(1, 35, 44);
+            outline-offset: 3px;
+            position:sticky;
+            top:0px;
+            
+        }
+        nav>a{
+            font-size: x-large;
+            text-decoration: none;
+            margin-right:0px;
+            color:white;
+            font-weight: 600;
+            display: inline-block;
+            padding-top: 10px;
+            margin-left:0px;
+            display: inline-block;
+            height:80%;
+            width:20%;
+            text-align: center;
+            position:sticky;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        nav> a:hover,nav>a:active{
+            background-color:rgb(1, 18, 23);
+        }
+        div.div-left-box{
+            width:300px;
+            height:370px;
+            float:left;
+            border-left:5px ridge rgb(0, 6, 8);
+            border-bottom:5px ridge rgb(0, 6, 8);
+            border-top:5px ridge rgb(0, 6, 8);
+            box-shadow: 0px 0px 15px black;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+            background-color: rgb(1, 35, 44);
+            z-index: 3;
+        }
+        ul.ul-left{
+            /* border-left:7px ridge rgb(70, 82, 86);
+            border-bottom:7px ridge rgb(70, 82, 86); */
+            /* border-top:7px ridge rgb(70, 82, 86); */
+            border-right:7px ridge rgb(70, 82, 86);
+            border-bottom-left-radius: 51px;
+            margin-left: 15px;
+            margin-right: 45px;
+            height: 320px;
+            margin-top: 0;
+            padding-top:25px;
+        }
+        div.div-left-box a{
+            color: white;
+            word-spacing: 3px;            
+        }
+        p.p-1{ 
+            margin-left:20px;
+            margin-right:55px;
+            word-spacing: 3px;
+            word-break: break-all;
+            font-size: 17px;
+            font-weight: 500;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(1, 35, 44);
+        }
+        .image{
+            width:40px;
+            height:40px;
+            background-color: white;
+            border-radius: 35%;
+        }
+        
+        .div-left-box a:hover{
+            color:rgb(151, 151, 157);
+        }
+        h3{
+            color:white;
+            position:absolute;
+            display: block;
+            left:95%;
+            top:10px;
+            width:20px;
+            font-size:20px;
+            top:0;
+        }
+        
+        .a2,.a3,.a1,.a4{
+            float:right;
+            clear: right;
+            height:40px;
+        }
+        .a1:hover,.a2:hover,.a3:hover,.a4:hover{
+            float:right;
+            width:90px;
+            background-color:gray;
+            height:40px;
+            border-bottom-left-radius: 35%;
+            border-top-left-radius: 35%;
+            clear:right;
+
+        }
+        div.div-float-right{
+            
+            /* margin-right:500px; */
+            position:absolute;
+            /* left:95%; */
+            right:30px;
+            width:100px;
+            top:240px;
+            
+        }
+        div.div-float-right a{
+            /* position:sticky; */
+            margin-left: 100px;
+            float:right;
+            clear:right; 
+            position: fixed;
+            border-radius:5px;
+            width:70px;
+            height:20px;
+            padding-top:3px;
+            padding-bottom: 7px;
+            padding-left: 5px;
+            
+        }
+        div.div-float-right a:hover{
+            margin-left:80px;
+        }
+        .a-right-01{
+            /* margin-top:30px; */
+            background-image: linear-gradient(rgb(151, 7, 151),red,yellow);
+        }
+        .a-right-02{
+            margin-top:30px;
+            background-color: rgb(44, 44, 251);
+        }
+        .a-right-03{
+            margin-top:60px;
+            background-color: mediumblue;
+        }
+        .a-right-04{
+            margin-top:90px;
+            background-color: black;
+        }
+        i.fa{
+           font-size:25px;
+           color:white;
+        }
+        #i-bg{
+            font-size: 900px;
+            color:rgb(170, 170, 170);
+            z-index: -1;
+            position: fixed;
+            right:200px;
+            
+        }
+        /* .sticky{
+            position: fixed;
+            width:100%;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- <i id="i-bg" class="fa fa-instagram"></i> -->
+    <center><i id="i-bg" class="fa fa-users"></i></center>
+    <header>
+        <img class="img-head" src="CDG_blog_post_image_06-850x412.jpg" alt="coder">
+        <!-- <img class="img-user" src="WhatsApp Image 2022-05-04 at 4.32.10 PM.jpeg" alt="user"> -->
+        <h3>P O R T F O L I O</h3> 
+        
+    </header>
+    <nav class="sticky">
+        <a href="#">Home</a>
+        <a href="#">Academic Qualifications</a>
+        <a href="#">Projects</a>
+        <a href="#">Experience</a>
+    </nav>
+    <br>
+    <div class="div-left-box">
+        <ul class="ul-left" style="color: rgb(157, 200, 209);">
+            <li>
+                <a href="#">Introduction</a>
+            </li>
+            <br>
+            <li>
+                <a href="#">Education Qualification</a>
+                <br><br>
+                <ul>
+                    <li><a href="#">Class 10th</a></li><br>
+                    <li><a href="#">Class 12th</a></li><br>
+                    <li><a href="#">Graduation</a></li>
+                </ul>
+            </li>
+            <br>
+            <li>
+                <a href="#">Projects</a>
+            </li>
+            <br>
+            <li>
+                <a href="#">Experience</a>
+            </li>
+        </ul>
+    </div>
+    <!-- <div class="div-sidebar">
+    <div class="div-a a1">
+        <a href="https://www.instagram.com/accounts/onetap/?next=%2F"><img class="image" src="instaLogo.png" alt="insta"></a> 
+    </div>
+    <div class="div-a a2">
+        <a href="www.facebook.com"><img class="image" src="facebookLogo.jpg" alt="facebook"></a><br>
+    </div>
+    <div class="div-a a3">
+        <a href="https://github.com/ShikhaDhiman1">
+            <img class="image" src="githubLogo.png" alt="github">
+        </a>
+    </div>
+    <div class="div-a a4">
+        <a href="https://www.twitter.com"><img class="image" src="twitterLogo.png" alt="twitter"></a>
+    </div>
+</div> -->
+<div class="div-float-right">
+    <a href="https://www.instagram.com/dshikha9876/" target="_blank" class="a-right-01">
+        <i class="fa fa-instagram"></i>
+    </a>
+    <a href="https://www.facebook.com" target="_blank" class="a-right-02">
+        <i class="fa fa-facebook"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/shikha-dhiman-22925b233/" target="_blank" class="a-right-03">
+        <i class="fa fa-linkedin"></i>
+    </a>
+    <a href="https://github.com/ShikhaDhiman1" target="_blank" class="a-right-04">
+        <i class="fa fa-github"></i>
+    </a>
+</div>
+    <p class="p-1" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati totam excepturi distinctio nobis perferendis officiis quas iusto similique voluptatem, architecto ipsa ut id, et aliquam. Ea dolorem, enim sapiente illum, officiis molestias perferendis blanditiis ullam corporis quod, culpa quaerat modi quam suscipit libero. Perspiciatis, maiores dolorem. Quisquam dolorem atque quis consequuntur voluptatem sequi a amet, cupiditate quae eum. Voluptatem eligendi illum earum ipsam ipsa! Ut dolores non eaque debitis. Corporis doloremque aut ratione sapiente magni ipsa nemo? Quam eveniet unde fugiat iste ad dicta esse vitae officia eos doloribus. Deserunt unde laboriosam, laborum fugiat quasi libero enim expedita magnam. Voluptatum doloremque, aperiam fugit doloribus reprehenderit odio sed quia eum labore voluptatibus minima aliquid quos dolores illo, pariatur atque in harum, possimus deserunt hic ut sequi tempora. Fuga qui distinctio obcaecati illo quae voluptate sapiente laborum ullam, quibusdam quia saepe, fugiat doloribus sint, incidunt suscipit omnis doloremque delectus magni pariatur! Labore ipsam voluptate adipisci, unde deleniti numquam facere quo. Alias tempore laboriosam molestiae perspiciatis ad dolorem temporibus eveniet enim, eum dicta nisi maiores cum similique asperiores beatae odio aperiam quod officiis praesentium molestias nesciunt quis? Atque nisi vero voluptatum nobis autem. Alias tempora maxime ullam facilis sint asperiores voluptatum animi! Quasi iure a architecto, nobis deleniti praesentium, vel odio doloremque doloribus aperiam quibusdam alias dolorum. Assumenda nostrum et eius alias quas ipsa. Exercitationem deserunt, a, asperiores dolorem ex cumque, assumenda porro explicabo ipsa molestiae alias aspernatur suscipit reprehenderit debitis nesciunt consectetur corporis dolor velit aperiam provident quia voluptas magnam qui accusamus! Voluptatum dolores voluptatibus quod nobis, similique enim voluptatem temporibus fugiat alias id nisi labore praesentium obcaecati eum hic et! Aliquid, voluptas? Incidunt, sunt nihil. Tenetur aperiam reiciendis pariatur temporibus alias qui unde ducimus dolorum cum doloremque laudantium reprehenderit dolores nemo inventore corrupti neque nam ex aspernatur aut, eaque voluptatibus aliquam, facilis esse. Totam esse adipisci sunt impedit sapiente? Id sint eos explicabo inventore tempore ea rem fuga perferendis reiciendis hic dolore ipsa, veritatis rerum sed, corporis deserunt quaerat atque. Natus illo ducimus molestias voluptate recusandae, mollitia consequatur minima rerum totam ex dolores vel nemo nam doloribus ullam nesciunt, harum maxime eius repellat. Sunt aliquam nesciunt blanditiis, pariatur hic iusto nostrum dolore ipsam delectus labore et eum ipsa eveniet magnam minus cumque. Nam quas velit nobis rem quibusdam tenetur eveniet consequatur dolores, consequuntur fugit deserunt eius autem. Vel est pariatur libero itaque veniam iste iusto sint repellat, eum reiciendis quod autem dolor, quas voluptates dolorem cupiditate ea tempore veritatis, accusamus numquam ullam totam. Placeat alias itaque ab error sunt excepturi quibusdam impedit nesciunt illum corrupti. Laboriosam inventore nesciunt eaque aspernatur ipsa molestias explicabo voluptatum numquam consectetur at sint mollitia voluptatibus dolorum, possimus voluptates? Voluptates, itaque. Ullam iste fugiat deleniti, ratione nostrum non nulla maxime repellat? Enim maiores, amet praesentium deserunt cupiditate suscipit nihil animi temporibus eligendi et quam quos esse natus consectetur hic culpa ut laboriosam tempora magni obcaecati corporis. Animi est iure blanditiis commodi dolor ad expedita beatae nesciunt magnam et dolore aperiam perspiciatis deserunt reiciendis, possimus distinctio, ab consequuntur corporis, obcaecati reprehenderit a! Quidem quibusdam accusantium rem, enim deserunt amet velit optio nam nesciunt porro autem ea, mollitia nihil recusandae cum voluptates similique architecto obcaecati quis a? Nam modi iusto tenetur nihil deleniti at, unde consequuntur officiis facilis veniam temporibus explicabo? Quos architecto totam doloremque officia fuga ipsum delectus voluptatum accusamus, numquam consectetur tempora nemo, atque consequatur? Ab minus eligendi fuga! Atque, est repellendus officia mollitia esse facere fugiat beatae labore quidem reprehenderit vitae rerum iusto recusandae libero fugit, eveniet commodi, quia eaque ea. Optio, labore doloribus tempore laborum aspernatur saepe repellendus eaque quae veniam velit autem ab ad ducimus accusamus perspiciatis minima nisi quam voluptatem culpa libero error. Temporibus neque cum, modi praesentium odio placeat incidunt ratione, nam dolore, tempora sint repellendus quia quas itaque quibusdam expedita culpa quidem! Fuga, natus? Eligendi placeat quidem soluta ut corrupti voluptatibus autem, ex culpa dolorem quae deserunt fuga ipsum debitis accusamus beatae perferendis esse rerum animi aliquam qui. Praesentium, deserunt veniam magni exercitationem iusto labore quis eum ullam soluta molestias modi quibusdam nulla doloribus dolor dolorum iure! Odio doloribus eaque amet asperiores architecto ex, quisquam et sint facilis debitis cum ratione dolor magnam delectus dicta eveniet modi soluta laborum repellendus nisi cupiditate dolore saepe. Ducimus aspernatur voluptatibus tenetur quaerat facere, dolorum, voluptate atque porro omnis ea provident quisquam sit facilis quibusdam quae harum delectus nulla. Vero, unde porro voluptatum enim numquam neque ab temporibus. Alias consequatur rerum cumque accusantium, dolorum pariatur harum voluptatem quibusdam debitis autem iure provident sit ipsum dolorem dignissimos maxime. Ipsum beatae neque temporibus suscipit repudiandae esse hic voluptate architecto, exercitationem maiores distinctio, repellat quae, ullam harum fugit non sed vero qui aperiam labore mollitia blanditiis laudantium ipsa. Dolorem praesentium, quos placeat odit distinctio sunt omnis nemo eius nobis labore blanditiis ipsam, consequatur doloremque, officiis culpa temporibus consequuntur eaque odio maxime natus sapiente vel voluptatibus. Quos temporibus nihil asperiores quisquam distinctio sit. Ducimus dolorem exercitationem, dicta voluptates, magni iusto, repellendus soluta harum enim veritatis temporibus fugiat eum omnis. Eligendi quo corrupti quasi numquam sunt placeat laboriosam ducimus natus reiciendis ut dolor commodi inventore repudiandae et a, sed hic quia necessitatibus incidunt dolorum consectetur animi repellat blanditiis modi. Voluptates, asperiores quod repellat quibusdam cum sit sed nostrum delectus nihil, corporis suscipit excepturi aspernatur illo et alias libero, architecto laudantium enim omnis dolor ullam quas assumenda? Dicta, odit doloremque quas neque aspernatur fugiat voluptatibus recusandae a voluptatum autem reiciendis, itaque aliquam, omnis cum. Hic consequuntur id ratione, quidem vero blanditiis nobis atque ipsa ipsum praesentium obcaecati ex distinctio velit nemo animi. Accusantium accusamus voluptas eius eum nesciunt quo sed iure, asperiores nemo consequatur labore natus consequuntur ipsa, impedit, optio aut aliquam iste? Magni dolor adipisci labore soluta beatae at itaque ad rerum cum laborum quibusdam corporis maxime facilis dicta doloribus porro fuga cupiditate, veniam numquam quae tempore aut quasi. Debitis omnis quaerat laboriosam quod blanditiis maiores alias, aliquam harum ipsum autem ducimus, voluptatem sit voluptatibus. Eaque consequatur, facere nemo assumenda consectetur quis dolorum, minus obcaecati sapiente ea excepturi deleniti ratione?
+    </p>
+
+    
+</body>
+</html>

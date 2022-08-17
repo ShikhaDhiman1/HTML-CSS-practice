@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Test</title>
+    <style>
+        .listi{
+            border: 1px dotted blueviolet;
+            background-color: hotpink;
+            outline: 2px solid rgb(237, 35, 136);
+            outline-offset: 3px;
+            list-style-type:upper-roman;
+            list-style-position: inside;
+        }
+        .listi2{
+            border: 1px dotted blueviolet;
+            background-color: hotpink;
+            outline: 2px solid rgb(237, 35, 136);
+            outline-offset: 3px;
+            list-style-type:square;
+            list-style-position: outside;
+            list-style: image("dtcRedBus.jpg");
+            list-style-image: url("C:\Users\hp\Desktop\Project1\DTClogo.png");
+        }
+        nav{
+            background-color: rgb(57, 57, 57);
+            /* height: 70px; */
+            overflow: hidden;
+        }
+        nav a{
+            color: white;
+            padding:30px;
+            font-size:x-large;
+            text-decoration: none;
+            float:left;
+
+        }
+        nav a:hover{
+            color:rgb(148, 27, 27);
+            /* background-color: rgb(170, 169, 169);
+            border-radius: 45px;
+            width:100px;
+            height: 10px; */
+
+        }
+        .division1{
+            background-color: darkgreen;
+            height: 80px;
+        }
+        .welc{
+            float: left;
+            color: white;
+            margin-left: 50px;
+            padding: 10px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-family: cursive;
+        }
+        .welc:hover{
+            background-color: rgb(5, 116, 5);
+            /* background-color: rgb(6, 124, 6);  */
+
+        }
+        div.division2 {
+            margin-left:650px;
+        }
+        div.division2 a{
+            margin-left: 120px;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 18px;
+            border-radius: 12px;
+        }
+        div.division2 a:hover{
+            background-color: rgb(5, 116, 5);
+            border-bottom: 2px solid black;
+        }
+        a.a1-2{
+            float:left;
+            color: white;
+            font-size: 25px;
+            margin-left:20px;
+            text-decoration: none;
+            padding-top: 10px;
+           /* padding-bottom: 25px; */
+            box-sizing: border-box;
+            
+        }
+        a.a1-2:hover{
+            height: 62px;
+            /* background-color: grey; */
+            border-bottom: 10px solid rgb(0, 52, 0);
+
+        }
+        div.division12{
+            background-color: darkgreen;
+            height: 80px;
+        }
+        .division21{
+            margin-left: 550px;
+        }
+        div.division12 a:not(a.a1-2){
+            /* box-sizing: border-box; */
+            font-size: large;
+            font-style: italic;
+            color: white;
+            text-decoration: none;
+            padding-top: 36px;
+            padding-bottom: 24px;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <a id="a1" href="http://google.com" target="_blank">GOOGLE</a><br>
+    <script>
+        url= document.links.a1.href
+        document.write('URL for google is : '+url)
+    </script>
+    <br><a id="a2" href="http://instagram.com">INSTAGRAM</a><br>
+    <script>
+        url = a2.href
+        document.write('URL is : '+url)
+    </script>
+    <!-- <p style="font-size: 35px;">
+        <h1 style="color:deeppink ; font-size:4em; text-shadow: 5px 1px 4px rgb(220, 34, 77) ;"><u>These are Relative Units in CSS :-></u></h1>
+        This is the Parent of &lt;span&gt; tag. <br>
+        <span style="font-size:150%">This is the Child Element of &lt;p&gt; tag</span> <br>
+        <span style="font-size:2em">This is the Child Element of &lt;p&gt; tag</span> <br>
+        <span style="font-size:1rem">This is the Child Element of &lt;p&gt; tag</span> <br>
+        <span style="font-size:2rem">This is the Child Element of &lt;p&gt; tag</span><br>
+        <span style="font-size:5vw">This is the Child Element of &lt;p&gt; tag</span> <br>
+        <span style="font-size:5vh">This is the Child Element of &lt;p&gt; tag</span><br>
+        <span style="font-size:1vh">This is the Child Element of &lt;p&gt; tag</span>   <br>
+        <span style="font-size:1vmin">This is the Child Element of &lt;p&gt; tag</span><br>
+        <span style="font-size:1vmax">This is the Child Element of &lt;p&gt; tag</span><br>
+        <span style="font-size:1vw">This is the Child Element of &lt;p&gt; tag</span><br>
+        <span style="font-size:5vmin">This is the Child Element of &lt;p&gt; tag</span><br>
+        <span style="font-size:5vmax">This is the Child Element of &lt;p&gt; tag</span><br>
+
+    </p>
+
+    <p style="margin-left: 25px;">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam unde molestiae ullam, laudantium voluptates dicta ratione consequatur animi nemo exercitationem? Optio error minima, ab alias qui voluptas voluptates odit exercitationem?
+    </p>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias velit explicabo odit dicta obcaecati sapiente nihil commodi. Illo iusto beatae earum molestias architecto vel nostrum similique, quibusdam ad dolorem vitae.
+    </p>
+    <ul>
+       <li class="listi">one</li> <br>
+       <li class="listi">two</li> <br>
+       <li class="listi">three</li> <br>
+    </ol>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias velit explicabo odit dicta obcaecati sapiente nihil commodi. Illo iusto beatae earum molestias architecto vel nostrum similique, quibusdam ad dolorem vitae.
+    </p>
+    <ul>
+       <li class="listi2">one</li> <br>
+       <li class="listi2">two</li> <br>
+       <li class="listi2">three</li> <br>
+    </ol> -->
+    <br>
+    <br>
+    <nav>
+        <a href="#" title=" Back to Home Page">Home</a><a href="#" title="Academic Details">Academic</a><a href="#" title="Previous Experiences">Experience</a>
+    </nav>
+
+    <div class="division1">
+        <br>
+        <a href="#" class="welc">WELCOME</a>
+        <div class="division2">
+            
+            <a href="#" title=" Back to Home Page">Home</a><a href="#" title="Academic Details">Academic</a><a href="#" title="Previous Experiences">Experience</a>
+        </div>
+    </div>
+    <br>
+    <div class="division12">
+        <br>
+        <a href="#" class="a1-2">WELCOME</a>
+        <div class="division21">
+            <br>
+            <a href="#" title=" Back to Home Page">Home</a><a href="#" title="Academic Details">Academic</a><a href="#" title="Previous Experiences">Experience</a>
+        </div>
+
+    </div>
+</body>
+</html>

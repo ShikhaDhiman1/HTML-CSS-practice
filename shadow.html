@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main {
+    max-width:870px;
+    min-width:610px;
+    margin:0px auto;
+    position:relative;
+    top:40px;
+    min-height:400px;
+}
+#maininside {
+    position:relative;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow:hidden;
+    padding:0px 25px 25px 25px; 
+
+}
+#maininner {
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    overflow:hidden;
+    box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.80);
+    -moz-box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.80);
+    -webkit-box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.80);
+    min-height:385px;
+    padding:0px 15px 15px 15px;
+    background:url(center.png) repeat;
+
+}
+#glow {
+    position:absolute;
+    height:50px;
+    top:0px;
+    box-shadow: 0 -10px 20px -5px #7b272c;
+    -moz-box-shadow: 0 -10px 20px -5px #7b272c;
+    -webkit-box-shadow: 0 -10px 20px -5px #7b272c;
+    display: block;
+    position:absolute;
+    height:auto;
+    bottom:0;
+    top:0;
+    left:0;
+    right:0;
+    margin-right:25px;
+    margin-left:25px;
+    margin-bottom:25px;
+}
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="glow">
+        </div>
+        <div id="maininside">
+          <div id="maininner" ></div>
+        </div>
+      </div>
+</body>
+</html>    

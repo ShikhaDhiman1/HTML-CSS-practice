@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: darkgreen;
+        }
+        div{
+            display:inline-block;
+            width:21.8%;
+            height:125px;
+            text-align: center;
+            padding:20px;
+        }
+        @media screen and (min-width:1148px) and (max-width:1360px) {
+            div{
+                width:21.2%;
+            }
+        }
+        @media screen and (min-width:917px) and (max-width:1147px) {
+            div{
+                width:20.2%;
+            }
+        }
+        @media screen and (max-width:916px) and (min-width:860px){
+            div{
+                width:45%;
+            }
+        }
+        @media screen and (max-width:859px) and (min-width:438px) {
+            div{
+                width:40%;
+            }
+        }
+        @media screen and (max-width:437px) and (min-width:300px) {
+            div{
+                width:25%;
+            }
+        }
+        button{
+            padding:7px;
+            font-size: large;
+            font-family: fantasy;
+            border-radius: 15px;
+        }
+        button:not(#btn-1):hover{
+            background-color: rgb(198, 197, 197);
+            /* padding: 10px; */
+        }
+        img{
+            width:130px;
+        }
+        .btn-n:hover{
+            padding:22px;
+            position: absolute;
+        }
+    </style>
+    <script>
+        function func(){
+            document.getElementById('p-1').style.backgroundColor='black';
+            document.getElementById('p-1').style.color='white';
+        }
+        function func2(){
+            alert("Great!!!You Right clicked the block..");
+            // alert("");
+        }
+        func
+    </script>
+</head>
+<body>
+   <center> <h1>.....Media Query Demo When the Size of Screen Decreases.....</h1></center>
+   <br>
+   <center><div style="background-color:darkgrey ;">
+    <h2>Name 1</h2>
+    Shikha Dhiman
+   </div>
+   <div style="background-color:rgb(199, 197, 197) ;">
+    <h2>Name 2</h2>
+    Sonakshi Sinha
+   </div>
+   <div style="background-color:rgb(228, 226, 226) ;">
+    <h2>Name 3</h2>
+    Deepika Padukone
+   </div>
+   <div style="background-color:rgb(242, 242, 242) ;">
+    <h2>Name 4</h2>
+    Alia Bhatt
+   </div>
+
+   <br>
+   <br>
+   <!-- <bdo dir="rtl">What a beutiful day!</bdo> <br>
+   <big>lassjlqemfqlk</big>
+   <br><br>
+   <button onclick="alert('Hello World!!!')">Click me</button>
+   <br><br>
+   <button type="button" onclick='document.getElementById("demo").innerHTML="hey You Clicked the button!"' >Click</button>
+   <p id="demo"></p>
+   <br><br>
+   
+    https://giphy.com/explore/light-bulb-sticker -->
+   <!-- <button onclick="document.getElementById('bulbimg').src='ONbulb.jpg'">Turn ON the light Bulb</button>
+   <img id="bulbimg" src="OFFbulb.jpg" alt="bulb">
+   <button onclick="document.getElementById('bulbimg').src='OFFbulb.jpg'">Turn OFF the light bulb</button>
+   <br>
+   <button id="btn-1" style="border:none; background-color:white;" onclick=func() >Click Here!</button>
+   <br>
+   <p id="p-1" style=" width:100%; height:50px; padding-top:  25px;color: black;"><b><u>Hello, FRIENDS!!</u></b></p>
+   <br>
+   <p style=" width:100%; height:50px; padding-top: 25px; background-color: aqua;font-size: 25px;" oncontextmenu="func2()">Right click this block</p>
+   <br>
+   <p id="p-2">This is onclick demo using a variable</p>--> 
+
+   <button class="btn-n">click here</button> &emsp; &emsp; &emsp; &emsp;
+   <button class="btn-n">click Here</button>
+</div>
+</body>
+</html>

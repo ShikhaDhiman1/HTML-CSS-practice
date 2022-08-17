@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoginPage</title>
+    <style>
+        body{
+            /* background-image:url("photo-1474540412665-1cdae210ae6b.jpg"); */
+            background-image: linear-gradient(black,grey);
+            background-repeat: no-repeat;
+            /* background-position: center; */
+            background-size: 1400px;
+            background-attachment: fixed;
+        }
+        fieldset{
+            margin-top:70px;
+            /* margin-left:430px;
+            margin-right: 430px; */
+            
+            /* background-image: linear-gradient(rgb(223, 183, 247),rgb(239, 204, 171),rgb(200, 214, 225)); */
+            background-color: rgb(223, 183,181);
+            border-style: double;
+            border:rgb(200,155,155) solid;
+            border-width: 5px;
+            border-radius: 30px;
+            /* border-style:unset; */
+            outline: rgb(184, 144, 144) solid 3px;
+            outline-offset: 3px;
+        }
+        #reg-log{
+            font-family: Broadway;
+            font-weight: 100;
+            color:rgb(94, 3, 94)
+        }
+        input{
+            border-radius: 5px;
+            border-style:dotted;
+            padding: 4px 3px;
+        }
+        pre{
+            font-size:14px;
+            font-weight: 700;
+            /* font-family:Lucida Calligraphy; */
+            font-family:monospace;
+        }
+        button{
+            border-radius: 5px;
+            background-color:rgb(200,155,155) ;
+            border-color: rgb(200,155,155);
+        }
+        button:hover{
+            background-color: rgb(166, 114, 114);
+        }
+        sup{
+            color:red;
+        }
+        #a2{
+            
+            margin-left: 150px;
+            color:#1c1cfc;
+        }
+        #a2:hover{
+            color:#1010bc;
+        }
+        #goToLogin{
+            color:#1c1cfc; margin-left: 320px;
+        }
+        #goToLogin:hover{
+            color:#1010bc;
+        }
+        nav{
+            background-color: rgb(200,155,155);
+            padding: 26px;
+            border :rgb(171, 132, 132) solid;
+            /* border-right: rgb(171, 132, 132) solid;
+            border-top: rgb(171, 132, 132) solid; */
+            border-width: 5px;
+            outline:rgb(184, 144, 144) solid 3px;
+            outline-offset: 3px;
+            
+        }
+        #a1{
+            text-decoration: none;
+            font-family: Broadway;
+            font-weight: 100;
+            font-size: 23px;
+            color:rgb(94, 3, 94);
+            background-color: rgb(184, 144, 144);
+            margin-right: 700px;
+            margin-left: 10px;
+            border-radius: 35px;
+            padding: 5px 15px;
+            outline:rgb(178, 140, 140) solid 4px;
+            display: inline-block;
+            
+        }
+        #a1:hover{
+            /* background-color: rgb(212, 175, 175); */
+            /* color:rgb(243, 224, 224);  */
+            box-shadow: 0px 0px 17px black;
+        }
+        a.a3:link,a.a3:visited{
+            text-decoration: none;
+            color:rgb(94, 3, 94);
+            font-size:17px ;
+            font-weight: 550;
+            font-family: monospace;
+            margin-left:20px;
+            background-color: rgb(184, 144, 144);
+            border-radius: 25px;
+            padding:5px;
+            display: inline-block;
+           
+            
+        }
+        a.a3:hover{
+            background-color:rgb(166, 114, 114) ;
+        }
+        #reg-here{
+            color: #1c1cfc; 
+            margin-left: 10px;
+        }
+        #reg-here:hover{
+            color:#1010bc;
+        }
+        
+    </style>
+</head>
+<body>
+    <script>
+        function loginPage(){
+            document.getElementById("loginForm");
+        }
+    </script>
+    <nav>
+        <a id="a1" href="#">Welcome to <br>my Website</a>
+        <!-- <div id="division"> -->
+            <a class="a3"href="#">LOGIN</a>&emsp;&emsp; <a class="a3" href="#">REGISTER</a> &emsp;&emsp; <a class="a3" href="#">HELP</a></pre>
+        <!-- </div> -->
+    </nav>
+<div style="display:inline-block; margin-left: 55px;">
+    <form action="#" >
+        <fieldset>
+            <h2 id="reg-log">&emsp;&emsp;&ensp;<u>Register</u></h2>
+            <pre>
+        First Name<sup>*</sup>       :  <input type="text" name="fname" id="fname" required>
+
+        Middle Name       :  <input type="text" name="mname" id="mname">
+
+        Last Name<sup>*</sup>        :  <input type="text" name="lname" id="lname" required>
+
+        E-mail Id<sup>*</sup>        :  <input type="email" name="emailId" id="emailId" required>
+            
+        Password<sup>*</sup>         :  <input type="password" name="passwrd" id="passwrd" required> 
+
+        Confirm Password  :  <input type="password" name="confrmpasswrd" id="confrmpasswrd" required> 
+            </pre>
+            <center><button>Submit</button></center>
+            <br>
+            <a href="#" id="goToLogin"  onclick="loginPage()">LOGIN now!</a>
+            <br>
+            <br>
+        </fieldset>
+    </form>
+</div>
+
+<div style="float:right; margin-right:5px; margin-top:20px;">
+    <img src="DtcBuses.jpg" alt="buses" style="width:750px; height:550px; border-radius: 15px;">
+</div>
+<img src="dtcRedBus.jpg" alt="buses" style="clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);float:left;width:650px;height:550px">
+<div style="float:right; margin-right: 55px;clear: right;">
+    <form action="#" >
+        <fieldset id="loginForm">
+            <h2 id="reg-log">&emsp;&emsp;&ensp;<u>Login</u></h2>
+            <pre>
+        
+        Username/E-mail Id<sup>*</sup>  :  <input type="email" name="emailId" id="emailId" required>
+            
+        Password<sup>*</sup>            :  <input type="password" name="passwrd" id="passwrd" required> 
+            </pre>
+            <center><button>Login</button></center>
+            <br>
+            <a href="#" id="reg-here">new user? Register here</a>
+            <a id="a2" href="#">forgot password?</a>
+            <br>
+            <br>
+        </fieldset>
+    </form>
+</div>
+    
+</body>
+</html>

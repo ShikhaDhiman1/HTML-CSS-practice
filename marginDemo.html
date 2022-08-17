@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document2</title>
+    <style>
+        div.div-to-mail{
+            /* float: left; */
+            font-family: cursive;
+            font-size: large;
+            display: inline-block;
+            width:500px;
+        }
+        div.div-describe{
+            float: right;
+            width: 750px;
+            word-spacing: 6px;
+            letter-spacing: 1px;
+        }
+        @media all and (min-width:562px) {
+            .div-to-mail, a:after{
+                content: "("attr(data-mail)")";
+            }
+        }
+        .div-float{
+            float:right;
+        }
+        .div-float p{
+            clear:right;
+            /* position:fixed; */
+        }
+        
+        @media screen and (max-width:600px) and (orientation:portrait) {
+            .div-float{
+                float:left;
+            }
+            
+        }
+        @media not all and (max-width:700px){
+            .div-float{
+                color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div-to-mail">
+        <p>E-mail of Students : </p>
+        Shikha Dhiman <a data-mail="dshikha4403@gmail.com" href="mailto:dshikha4403@gmail.com"></a><br>
+        <p>Sonakshi Sinha</p><a data-mail="example@gmail.com" href="#"></a>
+        <p>Deepika Padukone</p><a data-mail="example2@gmail.com" href="#"></a>
+    </div>
+    <div class="div-describe">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore odio impedit, vel, sit eos molestias cum labore ullam aliquid fuga voluptatem voluptatum dignissimos, quasi consequuntur? Incidunt, nihil vitae. Voluptatem, dicta.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti tempore magnam, quae enim architecto a blanditiis quaerat nostrum ipsa, delectus consequuntur. Optio rerum non, totam quasi aliquam quis atque!</p>
+    </div>
+    <br>
+    <i >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo necessitatibus quisquam quibusdam, ab consequatur temporibus adipisci cupiditate recusandae facere mollitia nemo minima officiis dicta qui non, dolore, architecto veritatis. Aliquam?</i>
+    <dl>
+        <dt>Coffee</dt>
+        
+      <dd>
+      - black hot drink
+      </dd>
+      
+        <dt>Milk</dt>
+        
+      <dd>
+      - white cold drink
+      </dd>
+      
+      </dl>
+      <div class="div-float">
+        <p>Hello,</p>
+        <p>how</p>
+        <p>are</p>
+        <p>You?</p>
+      </div>
+      <img src="dtcGreenBus.jpg" alt="xxxx">
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Document</title>
+    <style>
+        div.div1{
+            display: inline-block;
+            width:400px;
+        }
+        div.div2{
+            float: right;
+            width:700px;
+            margin-right: 20px;;
+        }
+        @media screen and (min-width:1145px)  {
+            div.div1>ol>li>a:after{
+                content:"( " attr(data-mail) " )";
+            }
+        }
+        @media screen and (max-width:1144px)  {
+            div.div1>ol>li>a:after{
+                content:"Email";
+            }
+        }
+        @media screen and (min-width:500px) and (max-width:1138px) {
+            div.div1{
+                width:200px;
+            }
+        }
+        @media screen and (min-width:550px) and (max-width:937px) {
+            div.div2{
+                width:250px;
+            }
+            div.div1{
+                width:200px;
+            }
+        }
+        @media screen and (max-width:550px) {
+            div.div2{
+                width:200px;
+                float:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p>These are the emails : </p>
+        <ol>
+            <li> Shikha Dhiman <a data-mail="dshikha4403@gmail.com" href="#"></a></li>
+            <li>Shikha Dhiman <a data-mail="dshikha4403@gmail.com" href="#"></a></li>
+            <li>Shikha Dhiman <a data-mail="dshikha4403@gmail.com" href="#"></a></li>
+            <li>Shikha Dhiman <a data-mail="dshikha4403@gmail.com" href="#"></a></li>
+            <li>Shikha Dhiman <a data-mail="dshikha4403@gmail.com" href="#"></a></li>
+        </ol>
+    </div>
+    <div class="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium iusto laborum in ipsam laudantium cupiditate vero minus esse expedita? Possimus odio inventore reprehenderit libero neque voluptatem adipisci distinctio enim.</p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi doloremque reprehenderit cum velit earum tempora odit accusamus quod perspiciatis debitis, rerum dolor, maiores suscipit porro vitae cumque illum ipsum sunt.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias pariatur quidem quibusdam, sit facere et facilis laboriosam assumenda perspiciatis, nihil distinctio sequi repudiandae voluptas, fuga exercitationem? Dolor perferendis perspiciatis quae?
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed voluptates voluptatibus, excepturi similique, officia dolor laborum, ipsum quas quasi consectetur aliquam inventore officiis aspernatur dolore fugiat. Culpa expedita adipisci impedit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, officiis quaerat harum eaque ipsam animi aspernatur, beatae quis deleniti qui tenetur ullam eveniet magnam, debitis unde architecto similique natus fuga.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptatum, itaque fugit neque deserunt dignissimos officiis hic, cupiditate culpa natus minus, ipsum veritatis perspiciatis. Nulla vero sed repellat earum obcaecati!
+        </p>
+    </div>
+</body>
+</html>
