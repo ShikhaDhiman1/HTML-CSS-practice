@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated-Balls</title>
+    <style>
+        .div1,.div2{
+            position:absolute;
+            top:0%;
+            width:150px;
+            height: 150px;
+            border-radius: 50%;
+            animation-timing-function: ease-in;
+            animation-duration:3s;
+            animation-iteration-count: infinite;
+            /* animation-direction:alternate; */
+        }
+        .div1{
+            left:15%;
+            animation-name: ball1;
+            background-color: forestgreen;
+        }
+        .div2{
+            right:15%;
+            animation-name: ball2;
+            background-color: olive;
+        }
+        @keyframes ball1 {
+            0%{
+                top:0%;
+                right:15%;
+                background-color:forestgreen;
+                animation-timing-function: ease-in;
+            }
+            25%{
+                left:40%;
+                top:75%;
+                animation-timing-function: ease-out;
+            }
+            50%{
+                top:0%;
+                right:15%;
+                background-color: olive;
+                animation-timing-function: ease-in;
+            }
+            75%{
+                left:0px;
+                top:75%;
+                background-color: forestgreen;
+                animation-timing-function: ease-out;
+            }
+            /* 100%{
+                top:10%;
+                right:16%;
+                animation-timing-function: ease-in;
+            }  */
+        }
+        @keyframes ball2 {
+            0%{
+                top:0%;
+                right:15%;
+                background-color:olive;
+                animation-timing-function: ease-in;
+            }
+            25%{
+                right:40%;
+                top:75%;
+                animation-timing-function: ease-out;
+            }
+            50%{
+                top:0%;
+                right:15%;
+                background-color:forestgreen;
+                animation-timing-function: ease-in;
+            }
+            75%{
+                right:0px;
+                top:75%;
+                background-color: olive;
+                animation-timing-function: ease-out;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
